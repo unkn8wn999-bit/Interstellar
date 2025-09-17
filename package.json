@@ -4,15 +4,13 @@
   "type": "module",
   "engines": {
     "npm": ">=7.0.0",
-    "node": ">=18.0.0"
+    "node": ">=16.0.0"
   },
   "scripts": {
     "start": "node index.js",
     "format": "biome format --write .",
     "precommit": "pnpm run format && biome check --write .",
-    "lint": "biome lint --write .",
-    "build": "next build",
-    "deploy": "npx @cloudflare/next-on-pages build"
+    "lint": "biome lint --write ."
   },
   "author": "InterstellarNetwork",
   "license": "GPL-3.0-or-later",
@@ -28,9 +26,7 @@
     "node-fetch": "^3.3.2"
   },
   "devDependencies": {
-    "@biomejs/biome": "2.1.1",
-    "@cloudflare/next-on-pages": "latest",
-    "wrangler": "latest"
+    "@biomejs/biome": "2.1.1"
   },
   "packageManager": "pnpm@9.10.0"
 }
